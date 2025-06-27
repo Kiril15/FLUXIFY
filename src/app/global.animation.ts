@@ -14,7 +14,6 @@ export const navItem: Variants = {
   }
 };
 
-
 export const underlineAnimation = {
   initial: { width: 0 },
   hover: { 
@@ -42,3 +41,17 @@ export const lineAnimation = (index: number) => ({
   whileInView: { width: "100%" },
   transition: { duration: 0.8, delay: index * 0.2 },
 });
+
+
+export const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: i * 0.2,
+      ease: "easeOut",
+    },
+  }),
+};
