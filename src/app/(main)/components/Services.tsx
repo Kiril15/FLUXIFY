@@ -20,6 +20,7 @@ const Services = () => {
           initial="initial"
           whileInView="whileInView"
           whileHover="whileHover"
+          whileTap="whileHover"
           transition={{ duration: 0.5, delay: index * 0.1 }}
           viewport={{ once: true, margin: "-50px" }}
           className="group relative py-10 rounded-2xl bg-gray-900 border border-gray-800 w-full sm:w-[45%] lg:w-[22%] px-4"

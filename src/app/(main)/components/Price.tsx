@@ -56,11 +56,12 @@ const Price = () => {
           key={index}
           variants={serviceCard}
           initial="initial"
-          whileInView="whileInView"
+          animate="whileInView"
+          whileTap="whileInView"
           viewport={{ once: true }}
           className="relative group [perspective:1000px] w-full min-h-[400px] items-stretch"
         >
-          <div className="relative w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          <div className="relative w-full transition-transform duration-400 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-active:[transform:rotateY(180deg)]">
             <div className="w-full [backface-visibility:hidden]">
               <div className="bg-gradient-to-br from-[#2a273a] to-[#1c1b29] rounded-2xl p-6 flex flex-col space-y-4 overflow-hidden clip-your-clip">
                 <div className="space-y-4">
