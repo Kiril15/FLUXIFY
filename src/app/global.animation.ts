@@ -45,13 +45,13 @@ export const lineAnimation = (index: number) => ({
 
 export const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
+  visible: (custom: number) => ({
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      delay: i * 0.2,
-      ease: "easeOut",
+      delay: custom * 0.2,
+      ease: easeInOut,
     },
   }),
 };
