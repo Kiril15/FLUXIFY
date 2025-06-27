@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const vectors = [
     { className: "absolute object-contain z-[-1] sm:size-auto md:w-[400px] h-[650px]"},
-    { className: "absolute object-contain rotate-90 right-[7vw] z-[-1] sm:size-auto md:w-[400px] h-[650px]"},
-    { className: "absolute object-contain rotate-[220deg] right-[19vw] z-[-1] sm:size-auto md:w-[400px] h-[650px]"},
+    { className: "absolute object-contain rotate-90 right-[29vw] z-[-1] sm:size-auto md:w-[400px] h-[650px]"},
+    { className: "absolute object-contain rotate-[220deg] right-[31vw] z-[-1] sm:size-auto md:w-[400px] h-[650px]"},
 ]
 
 const Hero = () => {
     return (
-        <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10 mb-15">
+        <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mb-16 mt-[120px] sm:mt-[10px]">
             <div className="w-full lg:max-w-2xl text-center lg:text-left">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C0B7E8] via-[#A683D9] to-[#8176AF] animate-pulse drop-shadow-[0_0_20px_rgba(192,183,232,0.5)] mb-6 leading-tight">
                     Вітаємо у майбутньому з FLUXIFY
@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="relative w-full flex justify-end items-center mx-auto">
+            <div className="relative w-full flex justify-center sm:justify-end items-center mx-auto">
                 {vectors.map((v, i) => (
                     <Image
                         key={i}
@@ -36,7 +36,7 @@ const Hero = () => {
                         className={v.className}
                     />
                 ))}
-                <div className="relative w-full max-w-[600px] h-[400px] z-10">
+                <div className="relative w-full max-w-[90%] h-[250px] sm:max-w-[600px] sm:h-[400px] z-10">
                     <Image
                     src="/hero/hero.jpg"
                     alt="hero"
@@ -48,4 +48,5 @@ const Hero = () => {
         </section>
     );
 };
+
 export default Hero;

@@ -7,6 +7,7 @@ const LazyComponentRectangle = dynamic(() => import("./components/Rectangle"), {
 const LazyComponentServices = dynamic(() => import("./components/Services"), {loading: () => <Loader/>});
 const LazyComponentAbout = dynamic(() => import("./components/About"), {loading: () => <Loader/>});
 const LazyComponentPrice = dynamic(() => import("./components/Price"), {loading: () => <Loader/>});
+const LazyComponentProcess = dynamic(() => import("./components/Process"), {loading: () => <Loader/>});
 
 export const metadata: Metadata = {
   title: "Home - Fluxify",
@@ -21,6 +22,7 @@ export default function Home() {
         <LazyComponentPrice/>
         <LazyComponentAbout/>
         <LazyComponentServices/>
+        <LazyComponentProcess/>
       </section>
     );
   }
