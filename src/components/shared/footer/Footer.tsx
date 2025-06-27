@@ -5,6 +5,7 @@ import Button  from "../../ui/button/Button"
 import { motion } from "framer-motion";
 import { navItem, underlineAnimation } from "@/app/global.animation";
 import Separator from "@/components/ui/separator/separator";
+import { Instagram, Send, Music2 } from "lucide-react";
 
 const mainLinks = [
     { href: "", text: "Головна" },
@@ -16,9 +17,9 @@ const extraLinks = [
     { href: "technologies", text: "Технології" },
 ];
 const socials = [
-    { name: "Instagram", url: "#" },
-    { name: "Facebook", url: "#" },
-    { name: "Twitter", url: "#" },
+    { name: Instagram, url: "#" },
+    { name: Send, url: "#" },
+    { name: Music2, url: "#" },
 ];
 
 const Footer = () => {
@@ -48,7 +49,7 @@ const Footer = () => {
         </Link>
         <Separator/>
     </motion.div>
-    <div className="flex flex-col sm:flex-row items-center lg:items-start gap-10 text-center lg:text-left">
+    <div className="flex flex-col justify-center sm:flex-row items-center lg:items-start gap-10 text-center lg:text-left">
         <motion.ul variants={navItem} className="relative flex gap-4 flex-col pr-6 lg:pr-15 items-center lg:items-start">
         {mainLinks.map((item, index) => (
             <motion.li
@@ -112,7 +113,7 @@ const Footer = () => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >   
-                    {social.name}
+                    {social.name && <social.name />}
                 </motion.a>
             ))}
         </div>

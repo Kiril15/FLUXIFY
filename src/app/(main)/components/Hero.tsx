@@ -3,14 +3,14 @@ import Button from "@/components/ui/button/Button";
 import Link from "next/link";
 
 const vectors = [
-    { className: "absolute object-contain size-auto", style: {} },
-    { className: "absolute object-contain size-auto rotate-90", style: {} },
-    { className: "absolute object-contain size-auto rotate-[220deg] right-[19vw]", style: {} },
+    { className: "absolute object-contain size-auto z-[-1]"},
+    { className: "absolute object-contain size-auto rotate-90 left-[10vw] z-[-1]"},
+    { className: "absolute object-contain size-auto rotate-[220deg] right-[19vw] z-[-1]"},
 ]
 
 const Hero = () => {
     return (
-        <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10">
+        <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10 mb-[30px] sm:mb-15">
             <div className="w-full lg:max-w-2xl text-center lg:text-left">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C0B7E8] via-[#A683D9] to-[#8176AF] animate-pulse drop-shadow-[0_0_20px_rgba(192,183,232,0.5)] mb-6 leading-tight">
                     Вітаємо у майбутньому з FLUXIFY
@@ -18,8 +18,8 @@ const Hero = () => {
                 <p className="hidden sm:block text-base sm:text-lg text-gray-200 mb-8">
                     Від концепції до запуску: створюємо швидкі, безпечні сайти з інтуїтивним інтерфейсом, що конвертують відвідувачів у клієнтів
                 </p>
-                <div className="flex justify-center sm:justify-start">
-                    <Button>
+                <div className="flex justify-center sm:justify-center lg:justify-start">
+                    <Button customClass="">
                         <Link href="/price" className="text-black">Дізнатися прайс</Link>
                     </Button>
                 </div>
@@ -34,7 +34,6 @@ const Hero = () => {
                         width={400}
                         height={650}
                         className={v.className}
-                        style={v.style}
                     />
                 ))}
                 <div className="relative w-full max-w-[600px] h-[400px] z-10">

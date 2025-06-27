@@ -16,9 +16,29 @@ export const navItem: Variants = {
 
 
 export const underlineAnimation = {
-    initial: { width: 0 },
-    hover: { 
-      width: "100%",
-      transition: { duration: 0.4, ease: easeInOut }
-    }
-  };
+  initial: { width: 0 },
+  hover: { 
+    width: "100%",
+    transition: { duration: 0.4, ease: easeInOut }
+  }
+};
+
+  export const serviceCard = {
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  whileHover: {
+    y: -10,
+    boxShadow: "0 10px 25px -5px rgba(192, 183, 232, 0.3)",
+  },
+};
+
+export const glowOverlay = {
+  initial: { opacity: 0 },
+  whileHover: { opacity: 1 },
+};
+
+export const lineAnimation = (index: number) => ({
+  initial: { width: 0 },
+  whileInView: { width: "100%" },
+  transition: { duration: 0.8, delay: index * 0.2 },
+});
