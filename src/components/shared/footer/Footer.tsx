@@ -13,7 +13,7 @@ const mainLinks = [
     { href: "contact", text: "Контакти" },
 ];
 const extraLinks = [
-    { href: "price", text: "Прайс" },
+    { href: "price", text: "Послуги" },
     { href: "technologies", text: "Технології" },
 ];
 const socials = [
@@ -100,7 +100,7 @@ const Footer = () => {
 
         <motion.div
             variants={navItem}
-            className="relative w-full lg:w-auto pl-6 lg:pl-15 text-center lg:text-right mt-10 lg:mt-0"
+            className="relative w-full lg:w-auto lg:pl-15 text-center lg:text-right mt-10 lg:mt-0"
         >
         <Separator customClass="left-0"/>
         <h2 className="text-xl pb-4">Соціальні мережі</h2>

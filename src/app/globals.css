@@ -18,3 +18,7 @@ body {
 .main-wrapper {
   padding: 2.5dvw 4.85dvw;
 }
+
+.rotateY-180 {
+  transform: rotateY(180deg);
+}

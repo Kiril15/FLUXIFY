@@ -8,7 +8,7 @@ import { navItem, underlineAnimation } from "@/app/global.animation";
 const navLinks = [
     { href: "/", text: "Головна" },
     { href: "/about", text: "Про нас" },
-    { href: "/price", text: "Прайс" },
+    { href: "/price", text: "Послуги" },
     { href: "/contact", text: "Контакти" }
   ];
 

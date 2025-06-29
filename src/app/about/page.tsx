@@ -4,10 +4,12 @@ import { fadeInUp } from "@/app/global.animation";
 import Button from "@/components/ui/button/Button";
 import Link from "next/link";
 import { sections } from "./info/info";
+import AnimatedStars from "@/components/ui/star/Star";
 
 const About = () => (
     <section>
         <main className="text-white min-h-screen px-6 py-20">
+            <AnimatedStars />
             <motion.section
                 initial="hidden"
                 whileInView="visible"
