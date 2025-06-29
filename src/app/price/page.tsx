@@ -74,7 +74,7 @@ const priceCard = [
 
 const Price = () => {
     return (
-        <div>
+        <div className="py-20 sm:py-0">
             <section className="max-w-5xl mx-auto text-center mb-16">
                 <h1 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C0B7E8] via-[#A683D9] to-[#8176AF] mb-4">
                     Тарифи та послуги
