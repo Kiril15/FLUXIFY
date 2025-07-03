@@ -51,7 +51,7 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex gap-2 sm:gap-3 flex-wrap">
-          <Button className="py-[0.8vw] px-[2vw] border-white border-2 rounded-3xl">
+          <Button className="px-[clamp(1rem,2vw,2.5rem)] py-[clamp(0.5rem,1vw,1.2rem)] text-[clamp(0.85rem,1vw,1.1rem)] border-white border-2 rounded-3xl">
             <Link href="https://t.me/Tkri22" className="text-white">
               Консультація
             </Link>
