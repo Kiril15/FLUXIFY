@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const Price = () => {
     return (
-        <div className="pt-30 pb-20 md:py-0">
+        <div className="pt-20 pb-10 md:py-0 md: pt-30 pb-20">
             <PriceClient/>
             <script
               type="application/ld+json"

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { serviceCard } from "@/app/global.animation";
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import "./animation.css"
 
 type PriceCard = {
     priceCard: {
@@ -22,7 +23,7 @@ const CardPrice = ({priceCard}: PriceCard) => {
     }
 
     return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 px-4">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 md: py-12">
         {priceCard.map((card, index) => (
             <motion.div
                 key={index}
@@ -35,7 +36,7 @@ const CardPrice = ({priceCard}: PriceCard) => {
             >
             <div onClick={rotateCard} className="rotateCard relative w-full transition-transform duration-600 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 <div className="w-full [backface-visibility:hidden]">
-                    <div className="bg-gradient-to-br from-[#2a273a] to-[#1c1b29] rounded-2xl p-6 flex flex-col space-y-4 overflow-hidden clip-your-clip">
+                    <div className="rounded-2xl p-6 flex flex-col space-y-4 overflow-hidden clip-your-clip animated-gradient">
                         <div className="space-y-4">
                             <p className="flex justify-end items-center gap-1 text-xs text-gray-300">click <ArrowRight className="text-gray-300" width={13} height={13}/></p>
                             <card.icon className="w-20 h-20 mx-auto text-purple-400" />
